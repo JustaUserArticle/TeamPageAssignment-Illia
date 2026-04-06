@@ -18,54 +18,51 @@
 
         .card { 
             float: left; 
-            width: 23%; 
+            width: 48%;
+            margin: 1%;
             background: white; 
-            padding: 15px; 
-            box-sizing: border-box;
+            box-sizing: border-box; 
             text-align: left;
+            min-height: 200px;
+            background-repeat: no-repeat;
+            background-size: 150px;
+            background-position: left center;
+            padding-left: 170px;
+            padding-right: 15px;
+            padding-top: 10px;
         }
-        
-        .card img { 
-            width: 100%; 
-            border-radius: 5px; 
-            float: right;
-            margin-bottom: 10px;
-        }
+
+        .member1 { background-image: url('image1.jpg'); }
+        .member2 { background-image: url('image2.jpg'); }
+        .member3 { background-image: url('image3.jpg'); }
+        .member4 { background-image: url('image4.jpg'); }
 
         .clearfix::after { content: ""; clear: both; display: table; }
     </style>
 </head>
 <body>
 
-    <div class="1">
+    <div class="container">
         <h1>Meet Our Team</h1>
 
-        <div class="10">
-            <img src="image1.jpg" alt="Member 1">
+        <div class="card member1">
             <h3>Alex Smith</h3>
             <p>A new recruit for the astronaut team. Alex has little experience but he is willing to learn!</p>
         </div>
 
-        <div class="10">
-            <img src="image2.jpg" alt="Member 2">
+        <div class="card member2">
             <h3>Maria Johnson</h3>
             <p>One of the best scientists in the entire world! And now she is here in space</p>
         </div>
 
-        <div class="10">
-            <img src="image3.jpg" alt="Member 3">
+        <div class="card member3">
             <h3>David Brown</h3>
             <p>One of the Nasa's astronauts. David has quite a bit of experience</p>
         </div>
 
-        <div class="10">
-            <img src="image4.jpg" alt="Member 4">
+        <div class="card member4">
             <h3>John Jones</h3>
             <p>The lead astronaut, he has a lot of Experience in space. John was present on the Apollo missions from 1969 to 1972</p>
         </div>
-
-        <div class="clearfix"></div>
-    </div>
-
 </body>
 </html>

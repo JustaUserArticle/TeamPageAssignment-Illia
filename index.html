@@ -3,7 +3,7 @@
 <head>
     <title>Our Team</title>
     <style>
-        body { font-family: sans-serif; margin: 0; background: #f4f4f4; text-align: center; }
+        body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
         
         nav { 
             position: fixed; 
@@ -11,64 +11,74 @@
             width: 100%; 
             background: #333; 
             padding: 15px 0; 
+            text-align: center;
             z-index: 100;
         }
         nav a { color: white; margin: 0 15px; text-decoration: none; }
 
-        .container { width: 90%; margin: 80px auto; }
+        .container { width: 80%; margin: 100px auto; }
+        h1 { text-align: center; }
 
         .card { 
-            float: left; 
-            width: 48%; 
-            margin: 1%;
             background: white; 
-            box-sizing: border-box; 
-            text-align: left;
-            
-            min-height: 250px;
-            
-            background-repeat: no-repeat;
-            background-size: 180px auto;
-            background-position: 10px center;
-            
-            padding: 20px 20px 20px 200px; 
+            margin-bottom: 20px;
+            padding: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        .member1 { background-image: url('image1.jpg'); }
-        .member2 { background-image: url('image2.jpg'); }
-        .member3 { background-image: url('image3.jpg'); }
-        .member4 { background-image: url('image4.jpg'); }
+        .card img { 
+            float: left;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
 
-        .clearfix::after { content: ""; clear: both; display: table; }
+        .card-content {
+            display: block;
+        }
+
+        .card h3 { margin-top: 0; }
     </style>
 </head>
 <body>
 
-    <div class="Members">
+    <div class="container">
         <h1>Meet Our Team</h1>
 
-        <div class="1">
-            <h3>Alex Smith</h3>
-            <p>A new recruit for the astronaut team. Alex has little experience but he is willing to learn!</p>
+        <div class="card">
+            <img src="image1.jpg" alt="Alex Smith">
+            <div class="<Member">
+                <h3>Alex Smith</h3>
+                <p>A new recruit for the astronaut team. Alex has little experience but he is willing to learn!</p>
+            </div>
         </div>
 
-        <div class="2">
-            <h3>Maria Johnson</h3>
-            <p>One of the best scientists in the entire world! And now she is here in space.</p>
+        <div class="card">
+            <img src="image2.jpg" alt="Maria Johnson">
+            <div class="<Member">
+                <h3>Maria Johnson</h3>
+                <p>One of the best scientists in the entire world! And now she is here in space.</p>
+            </div>
         </div>
 
-        <div class="3">
-            <h3>David Brown</h3>
-            <p>One of Nasa's astronauts. David has quite a bit of experience.</p>
+        <div class="card">
+            <img src="image3.jpg" alt="David Brown">
+            <div class="Member">
+                <h3>David Brown</h3>
+                <p>One of Nasa's astronauts. David has quite a bit of experience.</p>
+            </div>
         </div>
 
-        <div class="4">
-            <h3>John Jones</h3>
-            <p>The lead astronaut, he has a lot of experience in space. John was present on the Apollo missions from 1969 to 1972.</p>
+        <div class="card">
+            <img src="image4.jpg" alt="John Jones">
+            <div class="Member">
+                <h3>John Jones</h3>
+                <p>The lead astronaut, he has a lot of experience in space. John was present on the Apollo missions from 1969 to 1972.</p>
+            </div>
         </div>
-
-        <div class="clearfix"></div>
-    </div>
-
 </body>
 </html>

@@ -11,6 +11,7 @@
             width: 100%; 
             background: #333; 
             padding: 15px 0; 
+            z-index: 100;
         }
         nav a { color: white; margin: 0 15px; text-decoration: none; }
 
@@ -18,18 +19,19 @@
 
         .card { 
             float: left; 
-            width: 48%;
+            width: 48%; 
             margin: 1%;
             background: white; 
             box-sizing: border-box; 
             text-align: left;
-            min-height: 200px;
+            
+            min-height: 250px;
+            
             background-repeat: no-repeat;
-            background-size: 150px;
-            background-position: left center;
-            padding-left: 170px;
-            padding-right: 15px;
-            padding-top: 10px;
+            background-size: 180px auto;
+            background-position: 10px center;
+            
+            padding: 20px 20px 20px 200px; 
         }
 
         .member1 { background-image: url('image1.jpg'); }
@@ -42,27 +44,31 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="Members">
         <h1>Meet Our Team</h1>
 
-        <div class="card member1">
+        <div class="1">
             <h3>Alex Smith</h3>
             <p>A new recruit for the astronaut team. Alex has little experience but he is willing to learn!</p>
         </div>
 
-        <div class="card member2">
+        <div class="2">
             <h3>Maria Johnson</h3>
-            <p>One of the best scientists in the entire world! And now she is here in space</p>
+            <p>One of the best scientists in the entire world! And now she is here in space.</p>
         </div>
 
-        <div class="card member3">
+        <div class="3">
             <h3>David Brown</h3>
-            <p>One of the Nasa's astronauts. David has quite a bit of experience</p>
+            <p>One of Nasa's astronauts. David has quite a bit of experience.</p>
         </div>
 
-        <div class="card member4">
+        <div class="4">
             <h3>John Jones</h3>
-            <p>The lead astronaut, he has a lot of Experience in space. John was present on the Apollo missions from 1969 to 1972</p>
+            <p>The lead astronaut, he has a lot of experience in space. John was present on the Apollo missions from 1969 to 1972.</p>
         </div>
+
+        <div class="clearfix"></div>
+    </div>
+
 </body>
 </html>

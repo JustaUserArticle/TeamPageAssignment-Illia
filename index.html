@@ -3,57 +3,68 @@
 <head>
     <title>Our Team</title>
     <style>
-        body { 
-            font-family: sans-serif; 
-            margin: 0; 
-            background: #f4f4f4; 
-            text-align: right; 
-        }
-        
-        nav {  
-            top: 0; 
-            width: 100%; 
-            background: #333; 
-            padding: 15px 0; 
-            z-index: 1000;
-        }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
+    body { 
+        font-family: sans-serif; 
+        margin: 0; 
+        background: #f4f4f4; 
+    }
+    
+    nav {  
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        background: #333; 
+        padding: 15px 0; 
+        z-index: 1000;
+        text-align: center;
+    }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
 
-        .container { 
-            width: 80%; 
-            margin: 100px auto; 
-        }
+    .container { 
+        width: 80%; 
+        margin: 100px auto; 
+    }
 
-        .team-card { 
-            display: flex;
-            align-items: left;
-            text-align: right;
-            background: white; 
-            padding: 20px; 
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
+    .team-card { 
+        display: flex;
+        align-items: center;
+        background: white; 
+        padding: 20px; 
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: relative;
+    }
 
-        .team-card img { 
-            width: 150px;
-            height: auto;
-            margin-right: 25px;
-            border-radius: 5px; 
-        }
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #ffcc00;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
 
-        .card-info {
-            flex: 1;
-        }
+    .team-card img { 
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 25px;
+        border-radius: 5px; 
+    }
 
-        .card-info h3 { margin-top: 0; }
+    .Member {
+        flex: 1;
+    }
+</style>
 
-    </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="1">
         <h1>Meet Our Team</h1>
 
         <div class="team-card">
